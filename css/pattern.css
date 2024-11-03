@@ -1,0 +1,25 @@
+.main-pattern {
+    width: 100%;
+    height: 1rem;
+
+    background: repeating-linear-gradient(to bottom right,
+            transparent 0%,
+            transparent 33%,
+            #078484 33%,
+            #00CCCC 66%,
+            transparent 66%,
+            transparent 100%);
+    background-size: 15px 15px;
+    animation: animate 300ms linear infinite;
+    position: absolute;
+    opacity: 0.5;
+bottom: 0;
+}
+@keyframes animate {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 15px 0;
+    }
+  }
